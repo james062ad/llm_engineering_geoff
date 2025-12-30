@@ -6,6 +6,29 @@ This repository documents my hands-on execution of modern LLM engineering techni
 
 ---
 
+## 🔒 Reproducibility & Evidentiary Freeze
+
+All analysis in this repository is designed to be **reproducible and auditable**.  
+Python dependencies are fully specified via `pyproject.toml` and locked deterministically in `uv.lock`.
+
+At defined milestones (e.g. completion of a lesson, experiment, or analysis), the repository may be:
+- Committed with a descriptive message
+- Tagged to mark an evidentiary snapshot
+- Optionally archived or exported (e.g. notebook → PDF/HTML)
+
+This enables any competent third party to recreate the execution environment and re-run the analysis with materially identical results.
+
+---
+
+## 📄 Reproducibility Statement (Expert / Client Use)
+
+Each result in this repository is traceable to a specific Git commit and dependency lockfile.  
+Reproduction requires only cloning the repository and running `uv sync` before executing the relevant notebook.
+
+This approach supports defensible use in advisory, investigative, regulatory, and expert-reporting contexts.
+
+---
+
 ## 📌 How I Use This Repository (Post-Lesson Workflow)
 
 This repository is not a passive record of course completion.  
